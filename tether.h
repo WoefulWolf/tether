@@ -70,7 +70,7 @@ namespace tether {
 
 #pragma comment(linker, "/EXPORT:CreateDXGIFactory1=tether_CreateDXGIFactory1")
 		inline __declspec(dllexport) DWORD WINAPI tether_CreateDXGIFactory1(REFIID riid, void** ppFactory) {
-			void* addr = GetProcAddress(CreateTether(L"dxgi.dll"), "CreateDXGIFactory");
+			void* addr = GetProcAddress(CreateTether(L"dxgi.dll"), "CreateDXGIFactory1");
 
 			if (!addr)
 				ErrorBox(tetherResult::GetAddressError, "CreateDXGIFactory1");
@@ -80,7 +80,7 @@ namespace tether {
 
 #pragma comment(linker, "/EXPORT:CreateDXGIFactory2=tether_CreateDXGIFactory2")
 		inline __declspec(dllexport) DWORD WINAPI tether_CreateDXGIFactory2(UINT flags, REFIID riid, void** ppFactory) {
-			void* addr = GetProcAddress(CreateTether(L"dxgi.dll"), "CreateDXGIFactory");
+			void* addr = GetProcAddress(CreateTether(L"dxgi.dll"), "CreateDXGIFactory2");
 
 			if (!addr)
 				ErrorBox(tetherResult::GetAddressError, "CreateDXGIFactory2");
