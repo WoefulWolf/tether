@@ -1,4 +1,4 @@
-<h1 align="center">tether :link:</h1>
+<h1 align="center">:curly_loop: tether :link:</h1>
 <h3 align="center">Drag & Drop DLL Proxy</h2>
 
 ## Usage
