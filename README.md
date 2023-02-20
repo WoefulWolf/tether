@@ -9,6 +9,7 @@ Include `tether.h` in your DLL project.
 | ----------------------------------- | ------------- |
 | dxgi.dll  | CreateDXGIFactory <br> CreateDXGIFactory1 <br> CreateDXGIFactory2 |
 | dinput8.dll  | DirectInput8Create |
+| d3d11.dll  | D3D11CreateDevice |
 
 ## Requirements
 Depends on the proxies you want to use, but you'll probably always need the Windows SDK.
